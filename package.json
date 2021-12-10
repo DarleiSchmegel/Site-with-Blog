@@ -5,7 +5,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "check-lint": "next lint",
+    "generate": "graphql-codegen --config codegen.yml",
+    "check-prettier": "prettier --config .prettierrc --check \"**/*.{js,jsx}\"",
+    "prepare": "husky install",
+    "checks": "yarn install --check-files && yarn run check-prettier && yarn run check-lint"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.17",
