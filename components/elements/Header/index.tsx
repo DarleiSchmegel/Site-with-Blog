@@ -9,7 +9,7 @@ const navLinks = [
   },
   {
     label: 'Contact Me',
-    path: '#contact',
+    path: '/',
   },
 ];
 

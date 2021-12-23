@@ -11,7 +11,6 @@ export type AllBlogPageComponentProps = {
 };
 
 const AllBlogPage: React.FC<AllBlogPageComponentProps> = ({ posts }) => {
-  console.log(posts);
   return <AllBlogPageTamplete posts={posts} />;
 };
 

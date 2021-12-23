@@ -11,7 +11,6 @@ export type AllBlogPageComponentProps = {
 };
 
 const AllBlogPageTemplate: React.FC<AllBlogPageComponentProps> = ({ post }) => {
-  console.log('post Page', post);
   return (
     <BlogPostPageWrapper>
       <h1>{post.title}</h1>

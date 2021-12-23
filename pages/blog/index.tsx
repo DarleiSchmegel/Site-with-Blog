@@ -30,7 +30,6 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   ];
   const posts = postsVariable;
-  console.log('servidor', posts);
   return {
     props: {
       posts,

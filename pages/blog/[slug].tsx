@@ -17,7 +17,6 @@ const BlogPostContainer: React.FC<BlogPostContainerProps> = ({ post }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  console.log('entrous');
   const postsVariable = [
     {
       title: 'Post 1',
@@ -43,8 +42,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  console.log(ctx);
-  console.log(ctx.params);
   const postsVariable = [
     {
       title: 'Post 1',
